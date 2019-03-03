@@ -1,0 +1,360 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 100%;
+}
+li {
+    list-style: none;
+}
+
+a,
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.bg-header {
+    background: url("../img/header-banner.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 950px;
+    margin-bottom: 100px;
+}
+
+.header-container {
+    width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.left-header {
+    flex: 1;
+}
+
+.left-header .logo-margin {
+    margin-top: 70px;
+    margin-bottom: 350px;
+}
+
+.left-header .logo-margin span{
+    font-size: 30px;
+}
+
+.left-header h1 {
+    margin-bottom: 1rem; 
+    font-size: 60px;
+}
+
+.left-header p{
+    font-size: 13px;
+}
+.right-header {
+    margin-top: 290px;
+}
+
+.content-section-1 {
+    width: 1200px;
+    margin: 0 auto;
+}
+.content-section-1 h2{
+    font-weight: lighter;
+    font-size: 35px;
+    margin-bottom: 3rem;
+}
+
+@supports(grid-area: auto){
+    .something-new-container{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-gap: 2rem;
+        grid-template-areas: 
+        "a b"
+        "c d"
+        "e f";
+        margin-bottom: 80px;
+        font-size: 14px;
+    }
+
+    .something-new-container .number1{
+        grid-area: a;
+    }
+    .something-new-container .number2{
+        grid-area: c;
+    }
+    .something-new-container .number3{
+        grid-area: d;
+    }
+    .something-new-container .number4{
+        grid-area: e;
+    }
+    .something-new-container .number5{
+        grid-area: f;
+    }
+}
+
+@supports(grid-area: auto){
+    .information-container {
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        color: white;
+        margin-bottom: 100px;
+    }
+
+    .information-container .design-quality{
+        background: #f5989d;
+        padding: 40px;
+    }
+    .design-quality h2 {
+        font-size: 30px;
+        margin-bottom: 1rem;
+    }
+    .design-quality p {
+        font-size: 13px;
+        margin-bottom: 1rem;
+    }
+    .design-quality a{
+        font-family: YoungSerif Regular;
+        font-size: 16px;
+        color: white;
+    }
+    .built-to-last{
+        background: #615f7d;
+        padding: 40px;
+    }
+    .built-to-last h2 {
+        font-size: 30px;
+        margin-bottom: 1rem;
+    }
+    .built-to-last p {
+        font-size: 13px;
+        margin-bottom: 1rem;
+    }
+    .built-to-last a{
+        font-family: YoungSerif Regular;
+        font-size: 16px;
+        color: white;
+    }
+    .our-clients{
+        padding: 40px;
+        background-image: url(../img/bg-ice-camera.png);
+    }
+    .our-clients h2 {
+        font-size: 30px;
+        margin-bottom: 1rem;
+    }
+    .our-clients p {
+        font-size: 13px;
+        margin-bottom: 1rem;
+    }
+    .our-clients a{
+        font-family: YoungSerif Regular;
+        font-size: 16px;
+        color: white;
+    }
+    .sign-up-see-why{
+        grid-column: span 2;
+        padding: 40px;
+        background-image: url(../img/signup-box.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .sign-up-see-why h2 {
+        font-size: 30px;
+        margin-bottom: 1rem;
+    }
+    .sign-up-see-why p {
+        font-size: 13px;
+        margin-bottom: 1rem;
+    }
+    .sign-up-see-why a{
+        font-family: YoungSerif Regular;
+        font-size: 16px;
+        color: white;
+    }
+    .perfect-pictures{
+        background: #82ca9c;
+        padding: 40px;
+    }
+    .perfect-pictures h2 {
+        font-size: 30px;
+        margin-bottom: 1rem;
+    }
+    .perfect-pictures p {
+        font-size: 13px;
+        margin-bottom: 1rem;
+    }
+    .perfect-pictures a{
+        font-family: YoungSerif Regular;
+        font-size: 16px;
+        color: white;
+    }
+}
+
+.look-details {
+    display: flex;
+    flex: wrap;
+    margin-bottom: 150px;
+}
+
+.look-details-list {
+    color: #959595;
+    flex: 1 1 calc((100% / 4) - 3rem);
+    margin-right: 3rem;
+}
+
+.look-details-header {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+
+.look-details-content {
+    font-size: 13px;
+    line-height: 2;
+}
+
+/* End of Content Section 1 */
+
+.vehicle-banner{
+    background: url(../img/bg-car.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 870px;
+    margin-bottom: 120px;
+}
+
+.more-power {
+    width: 1200px;
+    margin: 0 auto;
+    color: white;
+}
+.more-power h2{
+    padding-top: 450px;
+    width: 550px;
+    font-size: 60px;
+    margin-bottom: 2rem;
+}
+.more-power h2 span {
+    font-style: italic;
+}
+
+.more-power p {
+    width: 550px;
+    font-size: 13px;
+    margin-bottom: 1rem;
+}
+
+.more-power a,
+.more-power a:visited {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* End of Vehicle Banner */
+
+.content-section-2 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.content-section-2 h2 {
+    font-size: 35px;
+    margin-bottom: 60px; 
+}
+
+.reasons-onboard{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reasons-onboard li {
+    flex: 1 1 calc((100% / 4) - 2rem);
+    margin-right: 2rem;
+}
+.reasons-onboard li h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.reasons-onboard li p {
+    font-size: 13px;
+    margin-bottom: 150px;
+}
+
+/* End of Content Section 2 */
+
+footer {
+    background: #192431;
+    height: 380px;
+    color: white;
+    font-size: 13px;
+}
+
+.footer-container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    flex: 1 1 calc((100% / 2) - 5rem);
+    padding-top: 120px;
+    margin-right: 5rem;
+}
+.footer-left span {
+    font-weight: bold;
+}
+.footer-left p {
+    margin-bottom: 2rem;
+}
+
+.footer-right{
+    flex: 1 1 calc((100% / 2) - 5rem);
+    padding-top: 120px;
+}
+
+.stay-intouch {
+    display: flex;
+    flex-wrap: wrap;
+}
+.stay-intouch p {
+    margin-bottom: 2rem;
+    flex: 1;
+}
+
+.media-icons{
+    flex: 1;
+}
+
+.media-icons img {
+    width: 1.1rem;
+}
+.footer-right form {
+    margin-bottom: 2rem;
+}
+
+input[type=text] {
+    width: 60%;
+    padding: 0.7rem;
+}
+
+.footer-right .fine-print {
+    color: rgb(122, 111, 111);
+    width: 75%;
+}

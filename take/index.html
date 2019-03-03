@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>take</title>
+
+    <style>
+    /*!
+ * Bootstrap Reboot v4.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */dl,h1,h2,h3,h4,h5,h6,ol,p,pre,ul{margin-top:0}address,dl,ol,p,pre,ul{margin-bottom:1rem}body,caption{text-align:left}button,hr,input{overflow:visible}pre,textarea{overflow:auto}article,aside,figcaption,figure,footer,header,hgroup,legend,main,nav,section{display:block}img,legend{width:100%}dd,h1,h2,h3,h4,h5,h6,label,legend{margin-bottom:.5rem}address,legend{line-height:inherit}label,output{display:inline-block}a,progress{vertical-align:baseline}a,ins{text-decoration:none}input,select,svg{vertical-align:middle}*,::after,::before{box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-ms-overflow-style:scrollbar;-webkit-tap-highlight-color:transparent}@-ms-viewport{width:device-width}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-weight:400;color:#212529;background-color:#fff}[tabindex="-1"]:focus{outline:0!important}hr{box-sizing:content-box}abbr[data-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;border-bottom:0}address{font-style:normal}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-left:0}dfn{font-style:italic}b,strong{font-weight:bolder}sub,sup{position:relative;line-height:0}sub{bottom:-.25em}sup{top:-.5em}a:hover{color:#0056b3;text-decoration:underline}a:not([href]):not([tabindex]),a:not([href]):not([tabindex]):focus,a:not([href]):not([tabindex]):hover{color:inherit;text-decoration:none}a:not([href]):not([tabindex]):focus{outline:0}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}pre{-ms-overflow-style:scrollbar}svg{overflow:hidden}caption{padding-top:.75rem;padding-bottom:.75rem;color:#6c757d;caption-side:bottom}th{text-align:inherit}button{border-radius:0}.visuallyhidden,hr{border:0;padding:0}button:focus{outline:dotted 1px;outline:-webkit-focus-ring-color auto 5px}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,[type=button]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}input[type=radio],input[type=checkbox]{box-sizing:border-box;padding:0}input[type=date],input[type=time],input[type=datetime-local],input[type=month]{-webkit-appearance:listbox}textarea{resize:vertical}fieldset{min-width:0}legend{max-width:100%;color:inherit;white-space:normal}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:none}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}summary{display:list-item;cursor:pointer}template{display:none}.hidden,[hidden]{display:none!important}.visuallyhidden{clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;position:absolute;width:1px;white-space:nowrap}.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto;white-space:inherit}.invisible{visibility:hidden}.clearfix:after,.clearfix:before{content:" ";display:table}article,aside,details,figcaption,figure,footer,header,hgroup,hr,menu,nav,section{display:block}.clearfix:after{clear:both}abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:0 0}ins,mark{background-color:#ff9;color:#000}body{line-height:1}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}a{color:#007bff;-webkit-text-decoration-skip:objects;margin:0;padding:0;font-size:100%;background:0 0}mark{font-style:italic;font-weight:700}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{height:1px;border-top:1px solid #ccc;margin:1em 0}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;font-family:'Open Sans',sans-serif;font-weight:400;line-height:1.5;font-size:100%}li{list-style:none}a,a:hover,a:visited{color:#000;text-decoration:none}.bg-header{background:url(../img/header-banner.webp) center center no-repeat;background-size:cover;width:100%;height:950px;margin-bottom:100px}.header-container{width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;color:#fff}.left-header,.stay-intouch p{flex:1}.left-header .logo-margin{margin-top:70px;margin-bottom:350px}.left-header .logo-margin span{font-size:30px}.left-header h1{margin-bottom:1rem;font-size:60px}.left-header p{font-size:13px}.right-header{margin-top:290px}.content-section-1{width:1200px;margin:0 auto}.content-section-1 h2{font-weight:lighter;font-size:35px;margin-bottom:3rem}@supports(grid-area:auto){.something-new-container{display:grid;grid-template-columns:repeat(2,50%);grid-gap:2rem;grid-template-areas:"a b" "c d" "e f";margin-bottom:80px;font-size:14px}.something-new-container .number1{grid-area:a}.something-new-container .number2{grid-area:c}.something-new-container .number3{grid-area:d}.something-new-container .number4{grid-area:e}.something-new-container .number5{grid-area:f}.built-to-last a,.design-quality a,.our-clients a,.perfect-pictures a,.sign-up-see-why a{font-family:YoungSerif Regular;color:#fff}.information-container{display:grid;grid-template-columns:repeat(3,33%);color:#fff;margin-bottom:100px}.information-container .design-quality{background:#f5989d;padding:40px}.design-quality h2{font-size:30px;margin-bottom:1rem}.design-quality p{font-size:13px;margin-bottom:1rem}.design-quality a{font-size:16px}.built-to-last{background:#615f7d;padding:40px}.built-to-last h2{font-size:30px;margin-bottom:1rem}.built-to-last p{font-size:13px;margin-bottom:1rem}.built-to-last a{font-size:16px}.our-clients{padding:40px;background-image:url(../img/bg-ice-camera.png)}.our-clients h2{font-size:30px;margin-bottom:1rem}.our-clients p{font-size:13px;margin-bottom:1rem}.our-clients a{font-size:16px}.sign-up-see-why{grid-column:span 2;padding:40px;background-image:url(../img/signup-box.jpg);background-repeat:no-repeat;background-size:cover}.sign-up-see-why h2{font-size:30px;margin-bottom:1rem}.sign-up-see-why p{font-size:13px;margin-bottom:1rem}.sign-up-see-why a{font-size:16px}.perfect-pictures{background:#82ca9c;padding:40px}.perfect-pictures h2{font-size:30px;margin-bottom:1rem}.perfect-pictures p{font-size:13px;margin-bottom:1rem}.perfect-pictures a{font-size:16px}}.look-details{display:flex;flex:wrap;margin-bottom:150px}.look-details-list{color:#959595;flex:1 1 calc((100% / 4) - 3rem);margin-right:3rem}.look-details-header{font-weight:700;font-size:14px;margin-bottom:1rem}.look-details-content{font-size:13px;line-height:2}.vehicle-banner{background:url(../img/bg-car.jpg) center center no-repeat;background-size:cover;width:100%;height:870px;margin-bottom:120px}.more-power{width:1200px;margin:0 auto;color:#fff}.more-power h2{padding-top:450px;width:550px;font-size:60px;margin-bottom:2rem}.more-power h2 span{font-style:italic}.more-power p{width:550px;font-size:13px;margin-bottom:1rem}.more-power a,.more-power a:visited{color:#fff;font-weight:700;font-size:14px}.content-section-2{width:1200px;margin:0 auto}.content-section-2 h2{font-size:35px;margin-bottom:60px}.reasons-onboard{display:flex;flex-wrap:wrap}.reasons-onboard li{flex:1 1 calc((100% / 4) - 2rem);margin-right:2rem}.reasons-onboard li h3{font-size:14px;font-weight:700;margin-bottom:1rem}.reasons-onboard li p{font-size:13px;margin-bottom:150px}footer{background:#192431;height:380px;color:#fff;font-size:13px}.footer-container{width:1200px;margin:0 auto;display:flex;flex-wrap:wrap}.footer-left p,.footer-right form,.stay-intouch p{margin-bottom:2rem}.footer-left{flex:1 1 calc((100% / 2) - 5rem);padding-top:120px;margin-right:5rem}.footer-left span{font-weight:700}.footer-right{flex:1 1 calc((100% / 2) - 5rem);padding-top:120px}.stay-intouch{display:flex;flex-wrap:wrap}.media-icons{flex:1}.media-icons img{width:1.1rem}input[type=text]{width:60%;padding:.7rem}.footer-right .fine-print{color:#7a6f6f;width:75%}
+    </style>
+    <!-- <link rel="stylesheet" href="css/reboot.css">
+    
+    <link rel="stylesheet" href="css/styles.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"> 
+</head>
+
+<body>
+ <header class="bg-header">
+     <div class="header-container">
+        <div class="left-header">
+            <p class="logo-margin">
+                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41">
+                    <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                        <rdf:Description rdf:about=""/>
+                    </rdf:RDF>
+                </x:xmpmeta>
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                            
+                <?xpacket end="w"?></metadata>
+                <defs>
+                    <style>
+                        .cls-1 {
+                        fill: #fff;
+                        fill-rule: evenodd;
+                        }
+                    </style>
+                    </defs>
+                    <path class="cls-1" d="M336.5,56A20.5,20.5,0,1,0,357,76.5,20.524,20.524,0,0,0,336.5,56Zm0,37.835A17.334,17.334,0,1,1,353.834,76.5,17.354,17.354,0,0,1,336.5,93.834Zm0-25.223a7.889,7.889,0,1,0,7.889,7.889A7.9,7.9,0,0,0,336.5,68.611Zm0,12.611a4.722,4.722,0,1,1,4.722-4.722A4.728,4.728,0,0,1,336.5,81.222Z" transform="translate(-316 -56)"/>
+                </svg> <span>take</span>
+            </p>
+            <h1>Picture Perfect</h1>
+            <p><p>Irure non labore elit dolor ex cupidatat anim culpa exercitation. Consequat non ipsum nostrud amet mollit cillum fugiat aliqua eu incididunt. Nisi pariatur eiusmod laborum excepteur. Esse non irure occaecat eiusmod sint nostrud. Enim sit esse veniam ipsum exercitation exercitation.</p></p>
+        </div>
+
+        <div class="right-header">
+            <img src="img/iphone-camera.png" alt="">
+        </div>
+    </div>
+ </header>
+
+ <main>
+    <div class="content-section-1">
+        <h2>Start something new</h2>
+        <div class="something-new-container">
+            <p class="number1">Irure non labore elit dolor ex cupidatat anim culpa exercitation. Consequat non ipsum nostrud amet mollit cillum fugiat aliqua eu incididunt. Nisi pariatur eiusmod laborum excepteur. Esse non irure occaecat eiusmod sint nostrud. Enim sit esse veniam ipsum exercitation exercitation.</p>
+
+            <p class="number2">Irure non labore elit dolor ex cupidatat anim culpa exercitation. Consequat non ipsum nostrud amet mollit cillum fugiat aliqua eu incididunt. Nisi pariatur eiusmod laborum excepteur. Esse non irure occaecat eiusmod sint nostrud. Enim sit esse veniam ipsum exercitation exercitation.</p>
+
+            <p class="number3">Irure non labore elit dolor ex cupidatat anim culpa exercitation. Consequat non ipsum nostrud amet mollit cillum fugiat aliqua eu incididunt. Nisi pariatur eiusmod laborum excepteur. Esse non irure occaecat eiusmod sint nostrud. Enim sit esse veniam ipsum exercitation exercitation.</p>
+
+            <p class="number4">Irure non labore elit dolor ex cupidatat anim culpa exercitation. Consequat non ipsum nostrud amet mollit cillum fugiat aliqua eu incididunt. Nisi pariatur eiusmod laborum excepteur. Esse non irure occaecat eiusmod sint nostrud. Enim sit esse veniam ipsum exercitation exercitation.</p>
+
+            <p class="number5">Irure non labore elit dolor ex cupidatat anim culpa exercitation. Consequat non ipsum nostrud amet mollit cillum fugiat aliqua eu incididunt. Nisi pariatur eiusmod laborum excepteur. Esse non irure occaecat eiusmod sint nostrud. Enim sit esse veniam ipsum exercitation exercitation.</p>
+        </div>
+
+        <ul class="information-container">
+            <li class="design-quality">
+                <h2>Design Quality</h2>
+                <p>Irure non labore elit dolor ex cupidatat anim culpa exercitation. Consequat non ipsum nostrud amet mollit cillum fugiat aliqua eu incididunt. Nisi pariatur eiusmod laborum excepteur. Esse non irure occaecat eiusmod sint nostrud. Enim sit esse veniam ipsum exercitation exercitation.</p>
+                <a href="#">FIND OUT MORE</a>
+            </li>
+            <li class="built-to-last">
+                <h2>Built to last</h2>
+                <p>Irure non labore elit dolor ex cupidatat anim culpa exercitation. Consequat non ipsum nostrud amet mollit cillum fugiat aliqua eu incididunt. Nisi pariatur eiusmod laborum excepteur. Esse non irure occaecat eiusmod sint nostrud. Enim sit esse veniam ipsum exercitation exercitation.</p>
+                <a href="#">FIND OUT MORE</a>
+            </li>
+            <li class="our-clients">
+                <h2>Our Clients</h2>
+                <p>Irure non labore elit dolor ex cupidatat anim culpa exercitation. Consequat non ipsum nostrud amet mollit cillum fugiat aliqua eu incididunt. Nisi pariatur eiusmod laborum excepteur. Esse non irure occaecat eiusmod sint nostrud. Enim sit esse veniam ipsum exercitation exercitation.</p>
+                <a href="#">GET INSIGHTS</a>
+            </li>
+            <li class="sign-up-see-why">
+                <h2>Sign up & see why</h2>
+                <p>Irure non labore elit dolor ex cupidatat anim culpa exercitation. Consequat non ipsum nostrud amet mollit cillum fugiat aliqua eu incididunt. Nisi pariatur eiusmod laborum excepteur. Esse non irure occaecat eiusmod sint nostrud. Enim sit esse veniam ipsum exercitation exercitation.</p>
+                <a href="#">GET STARTED NOW</a>
+            </li>
+            <li class="perfect-pictures">
+                <h2>Perfect pictures</h2>
+                <p>Irure non labore elit dolor ex cupidatat anim culpa exercitation. Consequat non ipsum nostrud amet mollit cillum fugiat aliqua eu incididunt. Nisi pariatur eiusmod laborum excepteur. Esse non irure occaecat eiusmod sint nostrud. Enim sit esse veniam ipsum exercitation exercitation.</p>
+                <a href="#">FIND OUT MORE</a>
+            </li>
+        </ul>
+
+        <h2>A look at the details</h2>
+        <ul class="look-details">
+            <li class="look-details-list">
+                <h3 class="look-details-header">Web based</h3>
+                <p class="look-details-content">Sit ipsum occaecat amet culpa enim voluptate. Consectetur cillum adipisicing ex ut id ad amet sunt sint cillum.</p>
+            </li>
+            <li class="look-details-list">
+                <h3 class="look-details-header">Performance</h3>
+                <p class="look-details-content">Sit ipsum occaecat amet culpa enim voluptate. Consectetur cillum adipisicing ex ut id ad amet sunt sint cillum.</p>
+            </li>
+            <li class="look-details-list">
+                <h3 class="look-details-header">Cultural</h3>
+                <p class="look-details-content">Sit ipsum occaecat amet culpa enim voluptate. Consectetur cillum adipisicing ex ut id ad amet sunt sint cillum.</p>
+            </li>
+            <li class="look-details-list">
+                <h3 class="look-details-header">Sustainability</h3>
+                <p class="look-details-content">Sit ipsum occaecat amet culpa enim voluptate. Consectetur cillum adipisicing ex ut id ad amet sunt sint cillum.</p>
+            </li>
+        </ul>        
+    </div> <!--End of content-section-1-->
+
+    <div class="vehicle-banner">
+        <div class="more-power">
+            <h2>More <span>power</span> behind every <span>pixel</span>.</h2>
+            <p>Enim ut amet pariatur id culpa velit. Nulla nisi tempor dolore officia tempor nostrud elit non elit irure eu enim sit. Occaecat enim adipisicing magna amet anim et nostrud excepteur pariatur. Velit id enim cupidatat labore quis pariatur.</p>
+            <a href="#">SEE THE OPTIONS -></a>
+        </div>
+    </div>
+
+    <div class="content-section-2">
+        <h2>Reasons to get onboard</h2>
+        <ul class="reasons-onboard">
+            <li>
+                <h3>Web based</h3>
+                <p>Duis id culpa velit reprehenderit reprehenderit cillum enim aliquip duis pariatur ut cupidatat. Id ex esse veniam pariatur cupidatat adipisicing laboris do ut ea minim consectetur magna. Et qui culpa ad ipsum tempor et ut pariatur irure commodo laboris.</p>
+            </li>
+            <li>
+                <h3>Team Login</h3>
+                <p>Sunt est esse non veniam aute id dolore dolor aute Lorem sunt. Cillum cillum in irure irure excepteur et consectetur incididunt nisi ullamco cillum ut ea elit.</p>
+            </li>
+            <li>
+                <h3>Great Support</h3>
+                <p>Enim cupidatat officia cupidatat excepteur aliqua mollit sint laboris dolor anim veniam reprehenderit. Excepteur consectetur cillum pariatur nulla.</p>
+            </li>
+        </ul>
+    </div>
+ </main>
+ <footer>
+     <div class="footer-container">
+         <div class="footer-left">
+            <p><span>Get in touch</span></p>
+            <p>Velit sit nisi dolore labore. Nostrud pariatur id ullamco mollit elit nulla culpa duis magna est nostrud. Anim laborum pariatur deserunt adipisicing ut ut reprehenderit magna anim sit.</p>
+        </div>
+        <div class="footer-right">
+            <div class="stay-intouch">
+                <p>Stay in touch </p>
+                <div class="media-icons">
+                        <img src="img/facebook-icon.png" alt=""> 
+                        <img src="img/linkedin-icon.png" alt=""> 
+                        <img src="img/twitter-icon.png" alt="">
+                </div>
+            </div>
+            <form action="#">
+                <input type="text" name="email">
+            </form>
+            <div class="fine-print">
+                <p>We don't send spam. Actually, who are we kidding, we'll spam the shit out of your inbox<p></p>
+            </div>
+            
+        </div>
+     </div>
+
+ </footer>
+</body>
+
+</html>
